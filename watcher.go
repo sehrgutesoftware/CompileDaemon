@@ -61,7 +61,7 @@ func (n NotifyWatcher) Watch(jobs chan<- string) {
 	for {
 		select {
 		case ev := <-n.watcher.Events:
-			if ev.Op&fsnotify.Remove == fsnotify.Remove || ev.Op&fsnotify.Write == fsnotify.Write || ev.Op&fsnotify.Create == fsnotify.Create {
+			if ev.Op&fsnotify.Remove == fsnotify.Remove || ev.Op&fsnotify.Write == fsnotify.Write || ev.Op&fsnotify.Create == fsnotify.Create || ev.Op&fsnotify.Chmod == fsnotify.Chmod {
 				// Assume it is a directory and track it.
 				if directoryShouldBeTracked(n.cfg, ev.Name) {
 					n.watcher.Add(ev.Name)
