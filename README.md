@@ -1,4 +1,4 @@
-# Very simple Compile Daemon for Go [![GoDoc](https://godoc.org/github.com/githubnemo/CompileDaemon?status.png)](http://godoc.org/github.com/githubnemo/CompileDaemon)
+# Very simple Compile Daemon for Go [![GoDoc](https://godoc.org/github.com/sehrgutesoftware/CompileDaemon?status.png)](http://godoc.org/github.com/sehrgutesoftware/CompileDaemon)
 
 Watches your .go files in a directory and invokes `go build` if
 a file changed. Nothing more.
@@ -11,7 +11,7 @@ Usage:
 
 You can use the `go` tool to install `CompileDaemon`:
 
-	go get github.com/githubnemo/CompileDaemon
+	go get github.com/sehrgutesoftware/CompileDaemon
 
 ## Development
 
@@ -111,14 +111,10 @@ this in production as it is simply too wasteful.
 
 ### Credits
 
-CompileDaemon was written by [githubnemo](https://github.com/githubnemo).
+CompileDaemon was originally written by [githubnemo](https://github.com/githubnemo).
 
 Code and documentation was contributed by [jimstudt](https://github.com/jimstudt).
 
-### Repository
-
-CompileDaemon is kept at [https://github.com/githubnemo/CompileDaemon](https://github.com/githubnemo/CompileDaemon)
-
 ### License
 
-CompileDaemon is licensed under the [BSD Two Clause License](https://github.com/githubnemo/CompileDaemon/blob/master/LICENSE)
+CompileDaemon is licensed under the [BSD Two Clause License](https://github.com/sehrgutesoftware/CompileDaemon/blob/master/LICENSE)
